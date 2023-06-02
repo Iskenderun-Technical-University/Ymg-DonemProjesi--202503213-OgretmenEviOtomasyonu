@@ -1,0 +1,12 @@
+C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\bin\Debug\Ogretmen Evi Otomasyonu.exe.config
+C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\bin\Debug\Ogretmen Evi Otomasyonu.exe
+C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\bin\Debug\Ogretmen Evi Otomasyonu.pdb
+C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\obj\Debug\Ogretmen Evi Otomasyonu.csproj.AssemblyReference.cache
+C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\obj\Debug\Ogretmen_Evi_Otomasyonu.Properties.Resources.resources
+C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\obj\Debug\Ogretmen Evi Otomasyonu.csproj.GenerateResource.cache
+C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\obj\Debug\Ogretmen Evi Otomasyonu.csproj.CoreCompileInputs.cache
+C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\obj\Debug\Ogretmen Evi Otomasyonu.exe
+C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\obj\Debug\Ogretmen Evi Otomasyonu.pdb
+C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\obj\Debug\Ogretmen_Evi_Otomasyonu.FrmYeniKisiEkle.resources
+C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\obj\Debug\Ogretmen_Evi_Otomasyonu.FrmAdminGiris.resources
+C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\obj\Debug\Ogretmen_Evi_Otomasyonu.FrmAnaForm.resources
