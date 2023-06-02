@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Sql;
+using System.Data.SqlClient;
 
 namespace Ogretmen_Evi_Otomasyonu
 {
@@ -16,6 +18,8 @@ namespace Ogretmen_Evi_Otomasyonu
         {
             InitializeComponent();
         }
+
+        SqlConnection baglanti = new SqlConnection(@"Data Source=FURUKI\SQLEXPRESS01;Initial Catalog=Ogretmen Evi Otomasyon;Integrated Security=True");
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -134,6 +138,15 @@ namespace Ogretmen_Evi_Otomasyonu
                 ucret = Convert.ToInt32(label12.Text) * 400;
                 TxtUcret.Text = ucret.ToString();
             }
+        }
+
+        private void BtnKaydet_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into KisiEkle (Adi,Soyadi,Telefon) values('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "','" + MskTxtTelefon.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+
         }
     }
 }

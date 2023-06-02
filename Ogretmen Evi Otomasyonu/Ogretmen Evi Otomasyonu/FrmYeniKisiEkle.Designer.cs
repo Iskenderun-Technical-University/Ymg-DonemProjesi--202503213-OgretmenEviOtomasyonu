@@ -31,6 +31,11 @@ namespace Ogretmen_Evi_Otomasyonu
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmYeniKisiEkle));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.CmbBoxCinsiyet = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.TxtUcret = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.CmbBoxKisi = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.BtnKaydet = new System.Windows.Forms.Button();
@@ -65,11 +70,6 @@ namespace Ogretmen_Evi_Otomasyonu
             this.Btn101 = new System.Windows.Forms.Button();
             this.BtnDolu = new System.Windows.Forms.Button();
             this.BtnBos = new System.Windows.Forms.Button();
-            this.TxtUcret = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.CmbBoxCinsiyet = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -108,6 +108,58 @@ namespace Ogretmen_Evi_Otomasyonu
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kişi Bilgileri";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(497, 389);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(19, 20);
+            this.label12.TabIndex = 40;
+            this.label12.Text = "0";
+            this.label12.Visible = false;
+            // 
+            // CmbBoxCinsiyet
+            // 
+            this.CmbBoxCinsiyet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.CmbBoxCinsiyet.FormattingEnabled = true;
+            this.CmbBoxCinsiyet.Items.AddRange(new object[] {
+            "Erkek",
+            "Kadın"});
+            this.CmbBoxCinsiyet.Location = new System.Drawing.Point(410, 120);
+            this.CmbBoxCinsiyet.Name = "CmbBoxCinsiyet";
+            this.CmbBoxCinsiyet.Size = new System.Drawing.Size(149, 28);
+            this.CmbBoxCinsiyet.TabIndex = 39;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(342, 126);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(64, 17);
+            this.label11.TabIndex = 38;
+            this.label11.Text = "Cinsiyet:";
+            // 
+            // TxtUcret
+            // 
+            this.TxtUcret.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.TxtUcret.Enabled = false;
+            this.TxtUcret.Location = new System.Drawing.Point(410, 73);
+            this.TxtUcret.Name = "TxtUcret";
+            this.TxtUcret.Size = new System.Drawing.Size(149, 26);
+            this.TxtUcret.TabIndex = 37;
+            this.TxtUcret.TextChanged += new System.EventHandler(this.TxtUcret_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(358, 76);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(48, 17);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Ücret:";
+            // 
             // CmbBoxKisi
             // 
             this.CmbBoxKisi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
@@ -140,6 +192,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnKaydet.TabIndex = 33;
             this.BtnKaydet.Text = "KAYDET";
             this.BtnKaydet.UseVisualStyleBackColor = true;
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // TxtOdaNo
             // 
@@ -485,58 +538,6 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnBos.Text = "Boş";
             this.BtnBos.UseVisualStyleBackColor = false;
             this.BtnBos.Click += new System.EventHandler(this.BtnBos_Click);
-            // 
-            // TxtUcret
-            // 
-            this.TxtUcret.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.TxtUcret.Enabled = false;
-            this.TxtUcret.Location = new System.Drawing.Point(410, 73);
-            this.TxtUcret.Name = "TxtUcret";
-            this.TxtUcret.Size = new System.Drawing.Size(149, 26);
-            this.TxtUcret.TabIndex = 37;
-            this.TxtUcret.TextChanged += new System.EventHandler(this.TxtUcret_TextChanged);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(358, 76);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 17);
-            this.label10.TabIndex = 36;
-            this.label10.Text = "Ücret:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(342, 126);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 17);
-            this.label11.TabIndex = 38;
-            this.label11.Text = "Cinsiyet:";
-            // 
-            // CmbBoxCinsiyet
-            // 
-            this.CmbBoxCinsiyet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.CmbBoxCinsiyet.FormattingEnabled = true;
-            this.CmbBoxCinsiyet.Items.AddRange(new object[] {
-            "Erkek",
-            "Kadın"});
-            this.CmbBoxCinsiyet.Location = new System.Drawing.Point(410, 120);
-            this.CmbBoxCinsiyet.Name = "CmbBoxCinsiyet";
-            this.CmbBoxCinsiyet.Size = new System.Drawing.Size(149, 28);
-            this.CmbBoxCinsiyet.TabIndex = 39;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(497, 389);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(19, 20);
-            this.label12.TabIndex = 40;
-            this.label12.Text = "0";
-            this.label12.Visible = false;
             // 
             // FrmYeniKisiEkle
             // 
