@@ -106,5 +106,34 @@ namespace Ogretmen_Evi_Otomasyonu
         {
             MessageBox.Show("Yeşil Renkli Butonlar Boş Odaları Göstermektedir.");
         }
+
+        private void TxtUcret_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DtpCikisTarihi_ValueChanged(object sender, EventArgs e)
+        {
+            int ucret;
+            DateTime KucukTarih = Convert.ToDateTime(DtpGirisTarihi.Text);
+            DateTime BuyukTarih = Convert.ToDateTime(DtpCikisTarihi.Text);
+
+            TimeSpan sonuc;
+            sonuc = BuyukTarih - KucukTarih;
+
+            //Misafirler için ücret 400, öğretmenler için 250 lira olarak belirlenmiştir.
+
+            label12.Text = sonuc.TotalDays.ToString();
+            if(CmbBoxKisi.Text=="Öğretmen"){
+
+                ucret = Convert.ToInt32(label12.Text) * 250;
+                TxtUcret.Text = ucret.ToString();
+            }
+            else if(CmbBoxKisi.Text=="Misafir")
+            {
+                ucret = Convert.ToInt32(label12.Text) * 400;
+                TxtUcret.Text = ucret.ToString();
+            }
+        }
     }
 }

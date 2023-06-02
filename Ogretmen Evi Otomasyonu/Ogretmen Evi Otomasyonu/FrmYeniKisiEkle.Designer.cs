@@ -69,12 +69,14 @@ namespace Ogretmen_Evi_Otomasyonu
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.CmbBoxCinsiyet = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.CmbBoxCinsiyet);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.TxtUcret);
@@ -203,6 +205,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.DtpCikisTarihi.Name = "DtpCikisTarihi";
             this.DtpCikisTarihi.Size = new System.Drawing.Size(200, 25);
             this.DtpCikisTarihi.TabIndex = 26;
+            this.DtpCikisTarihi.ValueChanged += new System.EventHandler(this.DtpCikisTarihi_ValueChanged);
             // 
             // DtpGirisTarihi
             // 
@@ -491,6 +494,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.TxtUcret.Name = "TxtUcret";
             this.TxtUcret.Size = new System.Drawing.Size(149, 26);
             this.TxtUcret.TabIndex = 37;
+            this.TxtUcret.TextChanged += new System.EventHandler(this.TxtUcret_TextChanged);
             // 
             // label10
             // 
@@ -523,6 +527,16 @@ namespace Ogretmen_Evi_Otomasyonu
             this.CmbBoxCinsiyet.Name = "CmbBoxCinsiyet";
             this.CmbBoxCinsiyet.Size = new System.Drawing.Size(149, 28);
             this.CmbBoxCinsiyet.TabIndex = 39;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(497, 389);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(19, 20);
+            this.label12.TabIndex = 40;
+            this.label12.Text = "0";
+            this.label12.Visible = false;
             // 
             // FrmYeniKisiEkle
             // 
@@ -589,5 +603,6 @@ namespace Ogretmen_Evi_Otomasyonu
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox CmbBoxCinsiyet;
+        private System.Windows.Forms.Label label12;
     }
 }

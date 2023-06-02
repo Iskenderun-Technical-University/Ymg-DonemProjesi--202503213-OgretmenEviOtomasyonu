@@ -31,7 +31,7 @@ namespace Ogretmen_Evi_Otomasyonu
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnaForm));
             this.BtnAdminGiris = new System.Windows.Forms.Button();
-            this.BtnAnaSayfa = new System.Windows.Forms.Button();
+            this.BtnKisiEkle = new System.Windows.Forms.Button();
             this.BtnOdalar = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -47,17 +47,19 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnAdminGiris.TabIndex = 0;
             this.BtnAdminGiris.Text = "Admin Giriş";
             this.BtnAdminGiris.UseVisualStyleBackColor = false;
+            this.BtnAdminGiris.Click += new System.EventHandler(this.BtnAdminGiris_Click);
             // 
-            // BtnAnaSayfa
+            // BtnKisiEkle
             // 
-            this.BtnAnaSayfa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.BtnAnaSayfa.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnAnaSayfa.Location = new System.Drawing.Point(185, 29);
-            this.BtnAnaSayfa.Name = "BtnAnaSayfa";
-            this.BtnAnaSayfa.Size = new System.Drawing.Size(108, 77);
-            this.BtnAnaSayfa.TabIndex = 1;
-            this.BtnAnaSayfa.Text = "Ana Sayfa";
-            this.BtnAnaSayfa.UseVisualStyleBackColor = false;
+            this.BtnKisiEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnKisiEkle.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnKisiEkle.Location = new System.Drawing.Point(185, 29);
+            this.BtnKisiEkle.Name = "BtnKisiEkle";
+            this.BtnKisiEkle.Size = new System.Drawing.Size(108, 77);
+            this.BtnKisiEkle.TabIndex = 1;
+            this.BtnKisiEkle.Text = "Kişi Ekle";
+            this.BtnKisiEkle.UseVisualStyleBackColor = false;
+            this.BtnKisiEkle.Click += new System.EventHandler(this.BtnKisiEkle_Click);
             // 
             // BtnOdalar
             // 
@@ -96,15 +98,19 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(626, 452);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.BtnOdalar);
-            this.Controls.Add(this.BtnAnaSayfa);
+            this.Controls.Add(this.BtnKisiEkle);
             this.Controls.Add(this.BtnAdminGiris);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmAnaForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ana Sayfa";
             this.ResumeLayout(false);
 
@@ -113,7 +119,7 @@ namespace Ogretmen_Evi_Otomasyonu
         #endregion
 
         private System.Windows.Forms.Button BtnAdminGiris;
-        private System.Windows.Forms.Button BtnAnaSayfa;
+        private System.Windows.Forms.Button BtnKisiEkle;
         private System.Windows.Forms.Button BtnOdalar;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;

@@ -16,5 +16,18 @@ namespace Ogretmen_Evi_Otomasyonu
         {
             InitializeComponent();
         }
+
+        private void BtnAdminGiris_Click(object sender, EventArgs e)
+        {
+            FrmAdminGiris fr = new FrmAdminGiris();
+            fr.Show();
+            this.Hide();
+        }
+
+        private void BtnKisiEkle_Click(object sender, EventArgs e)
+        {
+            FrmYeniKisiEkle fr = new FrmYeniKisiEkle();
+            fr.Show();
+        }
     }
 }
