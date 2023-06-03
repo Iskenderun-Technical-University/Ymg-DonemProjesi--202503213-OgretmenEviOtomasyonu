@@ -21,5 +21,19 @@ namespace Ogretmen_Evi_Otomasyonu
         {
 
         }
+
+        private void BtnGirisYap_Click(object sender, EventArgs e)
+        {
+            if (TxtKullaniciAdi.Text == "umut" && TxtSifre.Text == "1234")
+            {
+                FrmAnaForm fr = new FrmAnaForm();
+                fr.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı Adı veya Şifre Hatalı !!!");
+            }
+        }
     }
 }

@@ -143,9 +143,10 @@ namespace Ogretmen_Evi_Otomasyonu
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("insert into KisiEkle (Adi,Soyadi,Telefon) values('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "','" + MskTxtTelefon.Text + "')", baglanti);
+            SqlCommand komut = new SqlCommand("insert into KisiEkle (Adi,Soyadi,Telefon,TC,Mail,OdaNo,GirisTarihi,CikisTarihi,Kisi,Ucret,Cinsiyet) values('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "','" + MskTxtTelefon.Text + "','" + MskTxtTCKimlikNo.Text + "','" + TxtMail.Text + "','" + TxtOdaNo.Text + "','" + DtpGirisTarihi.Value.ToString("yyyy-MM-dd") + "','" + DtpCikisTarihi.Value.ToString("yyyy-MM-dd") + "','" + CmbBoxKisi.Text + "','" + TxtUcret.Text + "','" + CmbBoxCinsiyet.Text + "')", baglanti);
             komut.ExecuteNonQuery();
             baglanti.Close();
+            MessageBox.Show("Müşteri kaydı başarıyla yapıldı.");
 
         }
     }

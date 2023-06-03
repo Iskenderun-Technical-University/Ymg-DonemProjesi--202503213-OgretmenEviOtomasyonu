@@ -87,6 +87,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnGirisYap.TabIndex = 4;
             this.BtnGirisYap.Text = "Giriş";
             this.BtnGirisYap.UseVisualStyleBackColor = true;
+            this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
             // 
             // label3
             // 

@@ -16,7 +16,7 @@ namespace Ogretmen_Evi_Otomasyonu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmYeniKisiEkle());
+            Application.Run(new FrmAdminGiris());
         }
     }
 }

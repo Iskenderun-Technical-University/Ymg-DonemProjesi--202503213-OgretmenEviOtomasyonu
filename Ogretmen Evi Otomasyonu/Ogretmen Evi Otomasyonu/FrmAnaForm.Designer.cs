@@ -39,9 +39,9 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             // BtnAdminGiris
             // 
-            this.BtnAdminGiris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnAdminGiris.BackColor = System.Drawing.Color.LightGray;
             this.BtnAdminGiris.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnAdminGiris.Location = new System.Drawing.Point(12, 29);
+            this.BtnAdminGiris.Location = new System.Drawing.Point(32, 51);
             this.BtnAdminGiris.Name = "BtnAdminGiris";
             this.BtnAdminGiris.Size = new System.Drawing.Size(108, 77);
             this.BtnAdminGiris.TabIndex = 0;
@@ -51,9 +51,9 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             // BtnKisiEkle
             // 
-            this.BtnKisiEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnKisiEkle.BackColor = System.Drawing.Color.LightGray;
             this.BtnKisiEkle.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnKisiEkle.Location = new System.Drawing.Point(185, 29);
+            this.BtnKisiEkle.Location = new System.Drawing.Point(205, 51);
             this.BtnKisiEkle.Name = "BtnKisiEkle";
             this.BtnKisiEkle.Size = new System.Drawing.Size(108, 77);
             this.BtnKisiEkle.TabIndex = 1;
@@ -63,9 +63,9 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             // BtnOdalar
             // 
-            this.BtnOdalar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnOdalar.BackColor = System.Drawing.Color.LightGray;
             this.BtnOdalar.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnOdalar.Location = new System.Drawing.Point(357, 29);
+            this.BtnOdalar.Location = new System.Drawing.Point(377, 51);
             this.BtnOdalar.Name = "BtnOdalar";
             this.BtnOdalar.Size = new System.Drawing.Size(108, 77);
             this.BtnOdalar.TabIndex = 2;
@@ -74,9 +74,9 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.button4.BackColor = System.Drawing.Color.LightGray;
             this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(12, 177);
+            this.button4.Location = new System.Drawing.Point(32, 199);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(108, 77);
             this.button4.TabIndex = 3;
@@ -85,9 +85,9 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.button5.BackColor = System.Drawing.Color.LightGray;
             this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.Location = new System.Drawing.Point(185, 177);
+            this.button5.Location = new System.Drawing.Point(205, 199);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(108, 77);
             this.button5.TabIndex = 4;
@@ -100,6 +100,8 @@ namespace Ogretmen_Evi_Otomasyonu
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Silver;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(626, 452);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
