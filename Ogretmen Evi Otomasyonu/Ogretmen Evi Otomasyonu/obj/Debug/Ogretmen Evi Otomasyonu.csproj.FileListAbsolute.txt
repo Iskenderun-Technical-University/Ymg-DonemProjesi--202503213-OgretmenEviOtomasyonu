@@ -11,3 +11,4 @@ C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\ob
 C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\obj\Debug\Ogretmen_Evi_Otomasyonu.FrmAdminGiris.resources
 C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\obj\Debug\Ogretmen_Evi_Otomasyonu.FrmAnaForm.resources
 C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\obj\Debug\Ogretmen_Evi_Otomasyonu.FrmOdalar.resources
+C:\Users\Kubilay\source\repos\Ogretmen Evi Otomasyonu\Ogretmen Evi Otomasyonu\obj\Debug\Ogretmen_Evi_Otomasyonu.FrmMusteriler.resources

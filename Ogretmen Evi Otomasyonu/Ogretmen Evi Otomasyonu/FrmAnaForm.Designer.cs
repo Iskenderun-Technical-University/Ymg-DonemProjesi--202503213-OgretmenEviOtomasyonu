@@ -33,7 +33,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnAdminGiris = new System.Windows.Forms.Button();
             this.BtnKisiEkle = new System.Windows.Forms.Button();
             this.BtnOdalar = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnMusteriler = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -72,16 +72,17 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnOdalar.Text = "Odalar";
             this.BtnOdalar.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // BtnMusteriler
             // 
-            this.button4.BackColor = System.Drawing.Color.LightGray;
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(32, 199);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(108, 77);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = false;
+            this.BtnMusteriler.BackColor = System.Drawing.Color.LightGray;
+            this.BtnMusteriler.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnMusteriler.Location = new System.Drawing.Point(32, 199);
+            this.BtnMusteriler.Name = "BtnMusteriler";
+            this.BtnMusteriler.Size = new System.Drawing.Size(108, 77);
+            this.BtnMusteriler.TabIndex = 3;
+            this.BtnMusteriler.Text = "Müşteriler";
+            this.BtnMusteriler.UseVisualStyleBackColor = false;
+            this.BtnMusteriler.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -104,7 +105,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(626, 452);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.BtnMusteriler);
             this.Controls.Add(this.BtnOdalar);
             this.Controls.Add(this.BtnKisiEkle);
             this.Controls.Add(this.BtnAdminGiris);
@@ -123,7 +124,7 @@ namespace Ogretmen_Evi_Otomasyonu
         private System.Windows.Forms.Button BtnAdminGiris;
         private System.Windows.Forms.Button BtnKisiEkle;
         private System.Windows.Forms.Button BtnOdalar;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnMusteriler;
         private System.Windows.Forms.Button button5;
     }
 }

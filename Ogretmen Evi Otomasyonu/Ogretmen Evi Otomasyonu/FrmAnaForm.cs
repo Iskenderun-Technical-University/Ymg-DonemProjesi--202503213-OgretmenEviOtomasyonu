@@ -29,5 +29,11 @@ namespace Ogretmen_Evi_Otomasyonu
             FrmYeniKisiEkle fr = new FrmYeniKisiEkle();
             fr.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmMusteriler fr = new FrmMusteriler();
+            fr.Show();
+        }
     }
 }
