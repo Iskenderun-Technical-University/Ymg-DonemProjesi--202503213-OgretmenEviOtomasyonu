@@ -81,12 +81,126 @@ namespace Ogretmen_Evi_Otomasyonu
 
         private void BtnSil_Click(object sender, EventArgs e)
         {
-            baglanti.Open();
-            SqlCommand komut = new SqlCommand("delete from KisiEkle where Kisiid=(" + id + ")", baglanti);
-            komut.ExecuteNonQuery();
-            baglanti.Close();
-            verilerigoster();
 
+            if (TxtOdaNo.Text == "101")
+            {
+
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("delete from Oda101", baglanti);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                verilerigoster();
+            }
+
+            if (TxtOdaNo.Text == "102")
+            {
+
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("delete from Oda102", baglanti);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                verilerigoster();
+            }
+
+            if (TxtOdaNo.Text == "103")
+            {
+
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("delete from Oda103", baglanti);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                verilerigoster();
+            }
+
+            if (TxtOdaNo.Text == "201")
+            {
+
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("delete from Oda201", baglanti);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                verilerigoster();
+            }
+
+            if (TxtOdaNo.Text == "202")
+            {
+
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("delete from Oda202", baglanti);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                verilerigoster();
+            }
+
+            if (TxtOdaNo.Text == "203")
+            {
+
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("delete from Oda203", baglanti);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                verilerigoster();
+            }
+
+            if (TxtOdaNo.Text == "301")
+            {
+
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("delete from Oda301", baglanti);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                verilerigoster();
+            }
+
+            if (TxtOdaNo.Text == "302")
+            {
+
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("delete from Oda302", baglanti);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                verilerigoster();
+            }
+
+            if (TxtOdaNo.Text == "303")
+            {
+
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("delete from Oda303", baglanti);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                verilerigoster();
+            }
+
+            if (TxtOdaNo.Text == "401")
+            {
+
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("delete from Oda401", baglanti);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                verilerigoster();
+            }
+
+            if (TxtOdaNo.Text == "402")
+            {
+
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("delete from Oda402", baglanti);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                verilerigoster();
+            }
+
+            if (TxtOdaNo.Text == "403")
+            {
+
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("delete from Oda403", baglanti);
+                komut.ExecuteNonQuery();
+                baglanti.Close();
+                verilerigoster();
+            }
         }
 
         private void BtnTemizle_Click(object sender, EventArgs e)
