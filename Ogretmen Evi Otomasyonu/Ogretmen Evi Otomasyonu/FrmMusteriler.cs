@@ -54,5 +54,54 @@ namespace Ogretmen_Evi_Otomasyonu
         {
             verilerigoster();
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        int id = 0;
+        private void listView1_DoubleClick(object sender, EventArgs e)
+        {
+
+            id = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
+            TxtAdi.Text = (listView1.SelectedItems[0].SubItems[1].Text);
+            TxtSoyadi.Text = (listView1.SelectedItems[0].SubItems[2].Text);
+            MskTxtTelefon.Text = (listView1.SelectedItems[0].SubItems[3].Text);
+            MskTxtTCKimlikNo.Text = (listView1.SelectedItems[0].SubItems[4].Text);
+            TxtMail.Text = (listView1.SelectedItems[0].SubItems[5].Text);
+            TxtOdaNo.Text = (listView1.SelectedItems[0].SubItems[6].Text);
+            DtpGirisTarihi.Text = (listView1.SelectedItems[0].SubItems[7].Text);
+            DtpCikisTarihi.Text = (listView1.SelectedItems[0].SubItems[8].Text);
+            CmbBoxKisi.Text = (listView1.SelectedItems[0].SubItems[9].Text);
+            TxtUcret.Text = (listView1.SelectedItems[0].SubItems[10].Text);
+            CmbBoxCinsiyet.Text = (listView1.SelectedItems[0].SubItems[11].Text);
+
+        }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("delete from KisiEkle where Kisiid=(" + id + ")", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            verilerigoster();
+
+        }
+
+        private void BtnTemizle_Click(object sender, EventArgs e)
+        {
+            TxtAdi.Clear();
+            TxtSoyadi.Clear();
+            MskTxtTelefon.Clear();
+            MskTxtTCKimlikNo.Clear();
+            TxtMail.Clear();
+            TxtOdaNo.Clear();
+            DtpGirisTarihi.Text = "";
+            DtpCikisTarihi.Text = "";
+            CmbBoxKisi.Text = "";
+            TxtUcret.Clear();
+            CmbBoxCinsiyet.Text = "";
+        }
     }
 }

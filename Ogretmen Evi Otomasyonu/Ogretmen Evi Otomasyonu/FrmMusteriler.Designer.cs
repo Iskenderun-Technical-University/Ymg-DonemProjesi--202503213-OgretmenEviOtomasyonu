@@ -70,6 +70,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BtnTemizle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -96,6 +97,8 @@ namespace Ogretmen_Evi_Otomasyonu
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.listView1.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
             // 
             // columnHeader1
             // 
@@ -173,7 +176,7 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             this.BtnGuncelle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnGuncelle.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnGuncelle.Location = new System.Drawing.Point(756, 84);
+            this.BtnGuncelle.Location = new System.Drawing.Point(757, 64);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(171, 45);
             this.BtnGuncelle.TabIndex = 2;
@@ -184,18 +187,19 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             this.BtnSil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnSil.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnSil.Location = new System.Drawing.Point(756, 157);
+            this.BtnSil.Location = new System.Drawing.Point(757, 115);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(171, 45);
             this.BtnSil.TabIndex = 3;
             this.BtnSil.Text = "Sil";
             this.BtnSil.UseVisualStyleBackColor = false;
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // BtnArama
             // 
             this.BtnArama.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.BtnArama.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnArama.Location = new System.Drawing.Point(756, 228);
+            this.BtnArama.Location = new System.Drawing.Point(757, 217);
             this.BtnArama.Name = "BtnArama";
             this.BtnArama.Size = new System.Drawing.Size(171, 45);
             this.BtnArama.TabIndex = 4;
@@ -423,10 +427,22 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(810, 287);
+            this.textBox1.Location = new System.Drawing.Point(810, 284);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(118, 21);
             this.textBox1.TabIndex = 62;
+            // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.BtnTemizle.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnTemizle.Location = new System.Drawing.Point(757, 166);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(171, 45);
+            this.BtnTemizle.TabIndex = 63;
+            this.BtnTemizle.Text = "Verileri Temizle";
+            this.BtnTemizle.UseVisualStyleBackColor = false;
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
             // FrmMusteriler
             // 
@@ -435,6 +451,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(937, 491);
+            this.Controls.Add(this.BtnTemizle);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.CmbBoxCinsiyet);
             this.Controls.Add(this.label11);
@@ -517,5 +534,6 @@ namespace Ogretmen_Evi_Otomasyonu
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button BtnTemizle;
     }
 }
