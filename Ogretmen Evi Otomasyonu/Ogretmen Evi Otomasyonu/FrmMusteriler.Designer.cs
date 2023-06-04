@@ -71,6 +71,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.BtnTemizle = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listView1
@@ -133,7 +134,7 @@ namespace Ogretmen_Evi_Otomasyonu
             // columnHeader7
             // 
             this.columnHeader7.Text = "Oda No";
-            this.columnHeader7.Width = 55;
+            this.columnHeader7.Width = 68;
             // 
             // columnHeader8
             // 
@@ -206,6 +207,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnArama.TabIndex = 4;
             this.BtnArama.Text = "Arama";
             this.BtnArama.UseVisualStyleBackColor = false;
+            this.BtnArama.Click += new System.EventHandler(this.BtnArama_Click);
             // 
             // CmbBoxCinsiyet
             // 
@@ -233,7 +235,6 @@ namespace Ogretmen_Evi_Otomasyonu
             // TxtUcret
             // 
             this.TxtUcret.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.TxtUcret.Enabled = false;
             this.TxtUcret.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtUcret.Location = new System.Drawing.Point(459, 157);
             this.TxtUcret.Name = "TxtUcret";
@@ -428,9 +429,11 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(810, 284);
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox1.Location = new System.Drawing.Point(792, 268);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 21);
+            this.textBox1.Size = new System.Drawing.Size(136, 29);
             this.textBox1.TabIndex = 62;
             // 
             // BtnTemizle
@@ -445,6 +448,16 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnTemizle.UseVisualStyleBackColor = false;
             this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(742, 276);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(44, 21);
+            this.label12.TabIndex = 64;
+            this.label12.Text = "İsim:";
+            // 
             // FrmMusteriler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -452,6 +465,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(937, 491);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.BtnTemizle);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.CmbBoxCinsiyet);
@@ -536,5 +550,6 @@ namespace Ogretmen_Evi_Otomasyonu
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button BtnTemizle;
+        private System.Windows.Forms.Label label12;
     }
 }

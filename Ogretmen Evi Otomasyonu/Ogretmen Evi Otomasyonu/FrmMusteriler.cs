@@ -108,10 +108,42 @@ namespace Ogretmen_Evi_Otomasyonu
         {
 
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("update KisiEkle set Adi='" + TxtAdi.Text + "',Soyadi='" + TxtSoyadi.Text + "',Telefon='" + MskTxtTelefon.Text + "',TC='" + MskTxtTCKimlikNo.Text + "',Mail='" + TxtMail.Text + "',OdaNo='" + TxtOdaNo.Text + "',GirisTarihi='" + DtpGirisTarihi.Value.ToString("yyyy-MM-dd") + "',CikisTarihi='" + DtpCikisTarihi.Value.ToString("yyyy-MM-dd") + "',Kisi='" + CmbBoxKisi.Text + "',Ucret='" + TxtUcret.Text + "',Cinsiyet='" + CmbBoxCinsiyet.Text + "'where Kisiid='" + id + ")", baglanti);
+            SqlCommand komut = new SqlCommand("update KisiEkle set Adi='" + TxtAdi.Text + "',Soyadi='" + TxtSoyadi.Text + "',Telefon='" + MskTxtTelefon + "',TC='" + MskTxtTCKimlikNo.Text + "',Mail='" + TxtMail.Text + "',OdaNo='" + TxtOdaNo.Text + "',GirisTarihi='" + DtpGirisTarihi.Value.ToString("yyyy-MM-dd") + "',CikisTarihi='" + DtpCikisTarihi.Value.ToString("yyyy-MM-dd") + "',Kisi='" + CmbBoxKisi.Text + "',Ucret='" + TxtUcret.Text + "',Cinsiyet='" + CmbBoxCinsiyet.Text + "'where Kisiid=(" + id + baglanti)
+            {
+                Connection = baglanti
+            };
             komut.ExecuteNonQuery();
             baglanti.Close();
             verilerigoster();
+        }
+
+        private void BtnArama_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("select * from KisiEkle where Adi like '%" + textBox1.Text + "%'", baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+
+            while (oku.Read())
+            {
+                ListViewItem ekle = new ListViewItem();
+                ekle.Text = oku["Kisiid"].ToString();
+                ekle.SubItems.Add(oku["Adi"].ToString());
+                ekle.SubItems.Add(oku["Soyadi"].ToString());
+                ekle.SubItems.Add(oku["Telefon"].ToString());
+                ekle.SubItems.Add(oku["TC"].ToString());
+                ekle.SubItems.Add(oku["Mail"].ToString());
+                ekle.SubItems.Add(oku["OdaNo"].ToString());
+                ekle.SubItems.Add(oku["GirisTarihi"].ToString());
+                ekle.SubItems.Add(oku["CikisTarihi"].ToString());
+                ekle.SubItems.Add(oku["Kisi"].ToString());
+                ekle.SubItems.Add(oku["Ucret"].ToString());
+                ekle.SubItems.Add(oku["Cinsiyet"].ToString());
+
+                listView1.Items.Add(ekle);
+
+            }
+            baglanti.Close();
         }
     }
 }

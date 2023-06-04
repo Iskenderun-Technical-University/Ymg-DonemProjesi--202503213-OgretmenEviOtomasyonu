@@ -43,7 +43,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnAdminGiris.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnAdminGiris.Location = new System.Drawing.Point(32, 51);
             this.BtnAdminGiris.Name = "BtnAdminGiris";
-            this.BtnAdminGiris.Size = new System.Drawing.Size(108, 77);
+            this.BtnAdminGiris.Size = new System.Drawing.Size(121, 78);
             this.BtnAdminGiris.TabIndex = 0;
             this.BtnAdminGiris.Text = "Admin Giriş";
             this.BtnAdminGiris.UseVisualStyleBackColor = false;
@@ -55,7 +55,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnKisiEkle.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnKisiEkle.Location = new System.Drawing.Point(205, 51);
             this.BtnKisiEkle.Name = "BtnKisiEkle";
-            this.BtnKisiEkle.Size = new System.Drawing.Size(108, 77);
+            this.BtnKisiEkle.Size = new System.Drawing.Size(121, 78);
             this.BtnKisiEkle.TabIndex = 1;
             this.BtnKisiEkle.Text = "Kişi Ekle";
             this.BtnKisiEkle.UseVisualStyleBackColor = false;
@@ -67,7 +67,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnOdalar.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnOdalar.Location = new System.Drawing.Point(377, 51);
             this.BtnOdalar.Name = "BtnOdalar";
-            this.BtnOdalar.Size = new System.Drawing.Size(108, 77);
+            this.BtnOdalar.Size = new System.Drawing.Size(121, 78);
             this.BtnOdalar.TabIndex = 2;
             this.BtnOdalar.Text = "Odalar";
             this.BtnOdalar.UseVisualStyleBackColor = false;
@@ -78,7 +78,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnMusteriler.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnMusteriler.Location = new System.Drawing.Point(32, 199);
             this.BtnMusteriler.Name = "BtnMusteriler";
-            this.BtnMusteriler.Size = new System.Drawing.Size(108, 77);
+            this.BtnMusteriler.Size = new System.Drawing.Size(121, 78);
             this.BtnMusteriler.TabIndex = 3;
             this.BtnMusteriler.Text = "Müşteriler";
             this.BtnMusteriler.UseVisualStyleBackColor = false;
@@ -90,10 +90,11 @@ namespace Ogretmen_Evi_Otomasyonu
             this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button5.Location = new System.Drawing.Point(205, 199);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(108, 77);
+            this.button5.Size = new System.Drawing.Size(121, 78);
             this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
+            this.button5.Text = "Hakkımızda";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // FrmAnaForm
             // 
