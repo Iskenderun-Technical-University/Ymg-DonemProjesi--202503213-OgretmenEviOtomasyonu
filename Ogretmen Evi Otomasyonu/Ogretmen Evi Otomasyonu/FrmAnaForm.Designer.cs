@@ -71,6 +71,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnOdalar.TabIndex = 2;
             this.BtnOdalar.Text = "Odalar";
             this.BtnOdalar.UseVisualStyleBackColor = false;
+            this.BtnOdalar.Click += new System.EventHandler(this.BtnOdalar_Click);
             // 
             // BtnMusteriler
             // 

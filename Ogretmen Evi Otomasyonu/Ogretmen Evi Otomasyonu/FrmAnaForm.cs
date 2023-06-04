@@ -40,5 +40,11 @@ namespace Ogretmen_Evi_Otomasyonu
         {
             MessageBox.Show("Öğretmen Evi Otomasyon Uygulaması / 2023 - İstanbul");
         }
+
+        private void BtnOdalar_Click(object sender, EventArgs e)
+        {
+            FrmOdalar fr = new FrmOdalar();
+            fr.Show();
+        }
     }
 }

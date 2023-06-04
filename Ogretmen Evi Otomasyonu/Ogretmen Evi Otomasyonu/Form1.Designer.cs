@@ -57,7 +57,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(276, 212);
+            this.label2.Location = new System.Drawing.Point(306, 212);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 21);
             this.label2.TabIndex = 1;
@@ -65,22 +65,24 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             // TxtKullaniciAdi
             // 
+            this.TxtKullaniciAdi.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtKullaniciAdi.Location = new System.Drawing.Point(365, 177);
             this.TxtKullaniciAdi.Name = "TxtKullaniciAdi";
-            this.TxtKullaniciAdi.Size = new System.Drawing.Size(115, 20);
+            this.TxtKullaniciAdi.Size = new System.Drawing.Size(115, 25);
             this.TxtKullaniciAdi.TabIndex = 2;
             // 
             // TxtSifre
             // 
+            this.TxtSifre.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSifre.Location = new System.Drawing.Point(365, 212);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.PasswordChar = '*';
-            this.TxtSifre.Size = new System.Drawing.Size(115, 20);
+            this.TxtSifre.Size = new System.Drawing.Size(115, 25);
             this.TxtSifre.TabIndex = 3;
             // 
             // BtnGirisYap
             // 
-            this.BtnGirisYap.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGirisYap.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnGirisYap.Location = new System.Drawing.Point(383, 255);
             this.BtnGirisYap.Name = "BtnGirisYap";
             this.BtnGirisYap.Size = new System.Drawing.Size(83, 34);

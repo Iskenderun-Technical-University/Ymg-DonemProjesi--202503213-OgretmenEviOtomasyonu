@@ -199,6 +199,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.Name = "FrmOdalar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmOdalar";
+            this.Load += new System.EventHandler(this.FrmOdalar_Load);
             this.ResumeLayout(false);
 
         }

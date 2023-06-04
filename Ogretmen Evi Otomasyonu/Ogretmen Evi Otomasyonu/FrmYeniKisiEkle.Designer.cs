@@ -107,6 +107,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kişi Bilgileri";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label12
             // 
@@ -556,6 +557,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.Name = "FrmYeniKisiEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yeni Kişi Ekle";
+            this.Load += new System.EventHandler(this.FrmYeniKisiEkle_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
