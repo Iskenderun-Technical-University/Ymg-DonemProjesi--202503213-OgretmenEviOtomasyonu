@@ -37,6 +37,7 @@ namespace Ogretmen_Evi_Otomasyonu
             if (Btn101.Text != "101")
             {
                 Btn101.BackColor = Color.Brown;
+                Btn101.Enabled = false;
             }
 
             //ODA102
@@ -54,6 +55,7 @@ namespace Ogretmen_Evi_Otomasyonu
             if (Btn102.Text != "102")
             {
                 Btn102.BackColor = Color.Brown;
+                Btn102.Enabled = false;
             }
 
             //ODA103
@@ -71,6 +73,7 @@ namespace Ogretmen_Evi_Otomasyonu
             if (Btn103.Text != "103")
             {
                 Btn103.BackColor = Color.Brown;
+                Btn103.Enabled = false;
             }
 
             //ODA201
@@ -88,6 +91,7 @@ namespace Ogretmen_Evi_Otomasyonu
             if (Btn201.Text != "201")
             {
                 Btn201.BackColor = Color.Brown;
+                Btn201.Enabled = false;
             }
 
             //ODA202
@@ -105,6 +109,7 @@ namespace Ogretmen_Evi_Otomasyonu
             if (Btn202.Text != "202")
             {
                 Btn202.BackColor = Color.Brown;
+                Btn202.Enabled = false;
             }
 
             //ODA203
@@ -122,6 +127,7 @@ namespace Ogretmen_Evi_Otomasyonu
             if (Btn203.Text != "203")
             {
                 Btn203.BackColor = Color.Brown;
+                Btn203.Enabled = false;
             }
 
             //ODA301
@@ -139,6 +145,7 @@ namespace Ogretmen_Evi_Otomasyonu
             if (Btn301.Text != "301")
             {
                 Btn301.BackColor = Color.Brown;
+                Btn301.Enabled = false;
             }
 
             //ODA302
@@ -156,6 +163,7 @@ namespace Ogretmen_Evi_Otomasyonu
             if (Btn302.Text != "302")
             {
                 Btn302.BackColor = Color.Brown;
+                Btn302.Enabled = false;
             }
 
             //ODA303
@@ -173,6 +181,7 @@ namespace Ogretmen_Evi_Otomasyonu
             if (Btn303.Text != "303")
             {
                 Btn303.BackColor = Color.Brown;
+                Btn303.Enabled = false;
             }
 
             //ODA401
@@ -190,6 +199,7 @@ namespace Ogretmen_Evi_Otomasyonu
             if (Btn401.Text != "401")
             {
                 Btn401.BackColor = Color.Brown;
+                Btn401.Enabled = false;
             }
 
             //ODA402
@@ -207,6 +217,7 @@ namespace Ogretmen_Evi_Otomasyonu
             if (Btn402.Text != "402")
             {
                 Btn402.BackColor = Color.Brown;
+                Btn402.Enabled = false;
             }
 
             //ODA403
@@ -224,6 +235,7 @@ namespace Ogretmen_Evi_Otomasyonu
             if (Btn403.Text != "403")
             {
                 Btn403.BackColor = Color.Brown;
+                Btn403.Enabled = false;
             }
 
         }

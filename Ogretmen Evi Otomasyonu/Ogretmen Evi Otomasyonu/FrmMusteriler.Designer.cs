@@ -502,6 +502,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.Name = "FrmMusteriler";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteri Bilgileri";
+            this.Load += new System.EventHandler(this.FrmMusteriler_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

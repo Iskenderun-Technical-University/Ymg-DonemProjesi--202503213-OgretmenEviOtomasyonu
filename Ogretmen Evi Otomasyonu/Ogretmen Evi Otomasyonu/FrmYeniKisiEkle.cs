@@ -44,61 +44,109 @@ namespace Ogretmen_Evi_Otomasyonu
         private void Btn101_Click(object sender, EventArgs e)
         {
             TxtOdaNo.Text = "101";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda101 (Adi,Soyadi) values ('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void Btn102_Click(object sender, EventArgs e)
         {
             TxtOdaNo.Text = "102";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda102 (Adi,Soyadi) values ('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void Btn103_Click(object sender, EventArgs e)
         {
             TxtOdaNo.Text = "103";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda103 (Adi,Soyadi) values ('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void Btn201_Click(object sender, EventArgs e)
         {
             TxtOdaNo.Text = "201";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda201 (Adi,Soyadi) values ('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void Btn202_Click(object sender, EventArgs e)
         {
             TxtOdaNo.Text = "202";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda202 (Adi,Soyadi) values ('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void Btn203_Click(object sender, EventArgs e)
         {
             TxtOdaNo.Text = "203";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda203 (Adi,Soyadi) values ('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void Btn301_Click(object sender, EventArgs e)
         {
             TxtOdaNo.Text = "301";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda301 (Adi,Soyadi) values ('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void Btn302_Click(object sender, EventArgs e)
         {
             TxtOdaNo.Text = "302";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda302 (Adi,Soyadi) values ('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void Btn303_Click(object sender, EventArgs e)
         {
             TxtOdaNo.Text = "303";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda303 (Adi,Soyadi) values ('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void Btn401_Click(object sender, EventArgs e)
         {
             TxtOdaNo.Text = "401";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda401 (Adi,Soyadi) values ('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void Btn402_Click(object sender, EventArgs e)
         {
             TxtOdaNo.Text = "402";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda402 (Adi,Soyadi) values ('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void Btn403_Click(object sender, EventArgs e)
         {
             TxtOdaNo.Text = "403";
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Oda403 (Adi,Soyadi) values ('" + TxtAdi.Text + "','" + TxtSoyadi.Text + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
         }
 
         private void BtnDolu_Click(object sender, EventArgs e)
