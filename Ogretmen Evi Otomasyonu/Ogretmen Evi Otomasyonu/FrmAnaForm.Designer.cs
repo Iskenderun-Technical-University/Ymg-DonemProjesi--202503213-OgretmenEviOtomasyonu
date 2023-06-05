@@ -40,6 +40,9 @@ namespace Ogretmen_Evi_Otomasyonu
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.BtnHavaDurumu = new System.Windows.Forms.Button();
+            this.BtnGazeteler = new System.Windows.Forms.Button();
+            this.BtnCikis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnAdminGiris
@@ -116,9 +119,10 @@ namespace Ogretmen_Evi_Otomasyonu
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(73, 315);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(522, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 19);
             this.label1.TabIndex = 6;
@@ -127,9 +131,10 @@ namespace Ogretmen_Evi_Otomasyonu
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(122, 357);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label2.Location = new System.Drawing.Point(571, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 19);
             this.label2.TabIndex = 7;
@@ -139,6 +144,39 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // BtnHavaDurumu
+            // 
+            this.BtnHavaDurumu.BackColor = System.Drawing.Color.LightGray;
+            this.BtnHavaDurumu.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnHavaDurumu.Location = new System.Drawing.Point(32, 350);
+            this.BtnHavaDurumu.Name = "BtnHavaDurumu";
+            this.BtnHavaDurumu.Size = new System.Drawing.Size(121, 78);
+            this.BtnHavaDurumu.TabIndex = 8;
+            this.BtnHavaDurumu.Text = "Hava Durumu";
+            this.BtnHavaDurumu.UseVisualStyleBackColor = false;
+            // 
+            // BtnGazeteler
+            // 
+            this.BtnGazeteler.BackColor = System.Drawing.Color.LightGray;
+            this.BtnGazeteler.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGazeteler.Location = new System.Drawing.Point(205, 350);
+            this.BtnGazeteler.Name = "BtnGazeteler";
+            this.BtnGazeteler.Size = new System.Drawing.Size(121, 78);
+            this.BtnGazeteler.TabIndex = 9;
+            this.BtnGazeteler.Text = "Gazeteler";
+            this.BtnGazeteler.UseVisualStyleBackColor = false;
+            // 
+            // BtnCikis
+            // 
+            this.BtnCikis.BackColor = System.Drawing.Color.LightGray;
+            this.BtnCikis.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnCikis.Location = new System.Drawing.Point(377, 350);
+            this.BtnCikis.Name = "BtnCikis";
+            this.BtnCikis.Size = new System.Drawing.Size(121, 78);
+            this.BtnCikis.TabIndex = 10;
+            this.BtnCikis.Text = "Çıkış";
+            this.BtnCikis.UseVisualStyleBackColor = false;
+            // 
             // FrmAnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,7 +185,10 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(626, 452);
+            this.ClientSize = new System.Drawing.Size(716, 452);
+            this.Controls.Add(this.BtnCikis);
+            this.Controls.Add(this.BtnGazeteler);
+            this.Controls.Add(this.BtnHavaDurumu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnRadyo);
@@ -179,5 +220,8 @@ namespace Ogretmen_Evi_Otomasyonu
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button BtnHavaDurumu;
+        private System.Windows.Forms.Button BtnGazeteler;
+        private System.Windows.Forms.Button BtnCikis;
     }
 }
