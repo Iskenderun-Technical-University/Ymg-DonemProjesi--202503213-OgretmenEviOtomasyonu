@@ -43,30 +43,16 @@ namespace Ogretmen_Evi_Otomasyonu
         private void BtnGirisYap_Click(object sender, EventArgs e)
         {
 
-            baglanti.Open();
-            string sql = "select * from AdminGiris where Kullanici=@Kullanici AND Sifre=@Sifre";
-            SqlParameter prm1 = new SqlParameter("Kullaici", TxtKullaniciAdi.Text.Trim());
-            SqlParameter prm2 = new SqlParameter("Sifre", TxtSifre.Text.Trim());
-            SqlCommand komut = new SqlCommand(sql, baglanti);
-            komut.Parameters.Add(prm1);
-            komut.Parameters.Add(prm2);
-
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(komut);
-
-            da.Fill(dt);
-
-            if (dt.Rows.Count > 0)
+           if( TxtKullaniciAdi.Text=="umut" && TxtSifre.Text == "1234")
             {
                 FrmAnaForm fr = new FrmAnaForm();
                 fr.Show();
                 this.Hide();
+
             }
             else
             {
-
                 MessageBox.Show("Kullanıcı Adı veya Şifre Hatalı");
-                baglanti.Close();
             }
            
 

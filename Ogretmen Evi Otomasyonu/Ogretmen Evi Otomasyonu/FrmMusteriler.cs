@@ -20,7 +20,6 @@ namespace Ogretmen_Evi_Otomasyonu
         }
 
         SqlConnection baglanti = new SqlConnection(@"Data Source=FURUKI\SQLEXPRESS01;Initial Catalog=Ogretmen Evi Otomasyon;Integrated Security=True");
-
         private void verilerigoster()
         {
             listView1.Items.Clear();
@@ -225,7 +224,6 @@ namespace Ogretmen_Evi_Otomasyonu
             SqlCommand komut = new SqlCommand("update KisiEkle set Adi='" + TxtAdi.Text + "',Soyadi='" + TxtSoyadi.Text + "',Telefon='" + MskTxtTelefon + "',TC='" + MskTxtTCKimlikNo.Text + "',Mail='" + TxtMail.Text + "',OdaNo='" + TxtOdaNo.Text + "',GirisTarihi='" + DtpGirisTarihi.Value.ToString("yyyy-MM-dd") + "',CikisTarihi='" + DtpCikisTarihi.Value.ToString("yyyy-MM-dd") + "',Kisi='" + CmbBoxKisi.Text + "',Ucret='" + TxtUcret.Text + "',Cinsiyet='" + CmbBoxCinsiyet.Text + "'where Kisiid=" + id + "'"+"'" ,baglanti);
             komut.ExecuteNonQuery();
             baglanti.Close();
-            verilerigoster();
         }
 
         private void BtnArama_Click(object sender, EventArgs e)

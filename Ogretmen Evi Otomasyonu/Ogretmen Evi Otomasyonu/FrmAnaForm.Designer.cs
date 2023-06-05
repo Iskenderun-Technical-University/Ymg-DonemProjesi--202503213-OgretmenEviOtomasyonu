@@ -40,7 +40,6 @@ namespace Ogretmen_Evi_Otomasyonu
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.BtnHavaDurumu = new System.Windows.Forms.Button();
             this.BtnGazeteler = new System.Windows.Forms.Button();
             this.BtnCikis = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -126,7 +125,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(522, 51);
+            this.label1.Location = new System.Drawing.Point(507, 146);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 19);
             this.label1.TabIndex = 6;
@@ -138,7 +137,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(571, 93);
+            this.label2.Location = new System.Drawing.Point(556, 188);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 19);
             this.label2.TabIndex = 7;
@@ -148,22 +147,11 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // BtnHavaDurumu
-            // 
-            this.BtnHavaDurumu.BackColor = System.Drawing.Color.LightGray;
-            this.BtnHavaDurumu.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnHavaDurumu.Location = new System.Drawing.Point(32, 350);
-            this.BtnHavaDurumu.Name = "BtnHavaDurumu";
-            this.BtnHavaDurumu.Size = new System.Drawing.Size(121, 78);
-            this.BtnHavaDurumu.TabIndex = 8;
-            this.BtnHavaDurumu.Text = "Hava Durumu";
-            this.BtnHavaDurumu.UseVisualStyleBackColor = false;
-            // 
             // BtnGazeteler
             // 
             this.BtnGazeteler.BackColor = System.Drawing.Color.LightGray;
             this.BtnGazeteler.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnGazeteler.Location = new System.Drawing.Point(205, 350);
+            this.BtnGazeteler.Location = new System.Drawing.Point(33, 362);
             this.BtnGazeteler.Name = "BtnGazeteler";
             this.BtnGazeteler.Size = new System.Drawing.Size(121, 78);
             this.BtnGazeteler.TabIndex = 9;
@@ -175,7 +163,7 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             this.BtnCikis.BackColor = System.Drawing.Color.LightGray;
             this.BtnCikis.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnCikis.Location = new System.Drawing.Point(377, 350);
+            this.BtnCikis.Location = new System.Drawing.Point(205, 362);
             this.BtnCikis.Name = "BtnCikis";
             this.BtnCikis.Size = new System.Drawing.Size(121, 78);
             this.BtnCikis.TabIndex = 10;
@@ -187,7 +175,7 @@ namespace Ogretmen_Evi_Otomasyonu
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(537, 199);
+            this.pictureBox1.Location = new System.Drawing.Point(560, 304);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(167, 136);
             this.pictureBox1.TabIndex = 11;
@@ -199,7 +187,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(494, 164);
+            this.label3.Location = new System.Drawing.Point(494, 280);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(233, 16);
             this.label3.TabIndex = 12;
@@ -218,7 +206,6 @@ namespace Ogretmen_Evi_Otomasyonu
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnCikis);
             this.Controls.Add(this.BtnGazeteler);
-            this.Controls.Add(this.BtnHavaDurumu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnRadyo);
@@ -251,7 +238,6 @@ namespace Ogretmen_Evi_Otomasyonu
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button BtnHavaDurumu;
         private System.Windows.Forms.Button BtnGazeteler;
         private System.Windows.Forms.Button BtnCikis;
         private System.Windows.Forms.PictureBox pictureBox1;
