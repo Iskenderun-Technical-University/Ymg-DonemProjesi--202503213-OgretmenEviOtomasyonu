@@ -26,7 +26,7 @@ namespace Ogretmen_Evi_Otomasyonu
         }
         
         SqlConnection baglanti = new SqlConnection(@"Data Source=FURUKI\SQLEXPRESS01;Initial Catalog=Ogretmen Evi Otomasyon;Integrated Security=True");
-
+        DataSet ds = new DataSet();
           public static string MD5Hash(string text)
         {
             MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
@@ -54,7 +54,7 @@ namespace Ogretmen_Evi_Otomasyonu
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(komut);
 
-            //da.Fill(dt);
+            da.Fill(dt);
 
             if (dt.Rows.Count > 0)
             {
@@ -62,8 +62,6 @@ namespace Ogretmen_Evi_Otomasyonu
                 fr.Show();
                 this.Hide();
             }
-
-
             else
             {
 

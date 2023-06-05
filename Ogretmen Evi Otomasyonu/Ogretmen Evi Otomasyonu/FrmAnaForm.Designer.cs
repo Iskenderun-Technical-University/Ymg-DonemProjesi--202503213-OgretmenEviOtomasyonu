@@ -29,12 +29,17 @@ namespace Ogretmen_Evi_Otomasyonu
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnaForm));
             this.BtnAdminGiris = new System.Windows.Forms.Button();
             this.BtnKisiEkle = new System.Windows.Forms.Button();
             this.BtnOdalar = new System.Windows.Forms.Button();
             this.BtnMusteriler = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.BtnRadyo = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // BtnAdminGiris
@@ -97,6 +102,43 @@ namespace Ogretmen_Evi_Otomasyonu
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // BtnRadyo
+            // 
+            this.BtnRadyo.BackColor = System.Drawing.Color.LightGray;
+            this.BtnRadyo.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnRadyo.Location = new System.Drawing.Point(377, 199);
+            this.BtnRadyo.Name = "BtnRadyo";
+            this.BtnRadyo.Size = new System.Drawing.Size(121, 78);
+            this.BtnRadyo.TabIndex = 5;
+            this.BtnRadyo.Text = "Radyo Dinle";
+            this.BtnRadyo.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(73, 315);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 19);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(122, 357);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 19);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "label2";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FrmAnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -106,6 +148,9 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(626, 452);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.BtnRadyo);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.BtnMusteriler);
             this.Controls.Add(this.BtnOdalar);
@@ -117,7 +162,9 @@ namespace Ogretmen_Evi_Otomasyonu
             this.Name = "FrmAnaForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ana Sayfa";
+            this.Load += new System.EventHandler(this.FrmAnaForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -128,5 +175,9 @@ namespace Ogretmen_Evi_Otomasyonu
         private System.Windows.Forms.Button BtnOdalar;
         private System.Windows.Forms.Button BtnMusteriler;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button BtnRadyo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
