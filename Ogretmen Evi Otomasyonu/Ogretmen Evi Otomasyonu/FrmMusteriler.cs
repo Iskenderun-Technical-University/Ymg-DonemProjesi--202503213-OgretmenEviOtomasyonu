@@ -222,7 +222,8 @@ namespace Ogretmen_Evi_Otomasyonu
         {
 
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("update KisiEkle set Adi='" + TxtAdi.Text + "',Soyadi='" + TxtSoyadi.Text + "',Telefon='" + MskTxtTelefon + "',TC='" + MskTxtTCKimlikNo.Text + "',Mail='" + TxtMail.Text + "',OdaNo='" + TxtOdaNo.Text + "',GirisTarihi='" + DtpGirisTarihi.Value.ToString("yyyy-MM-dd") + "',CikisTarihi='" + DtpCikisTarihi.Value.ToString("yyyy-MM-dd") + "',Kisi='" + CmbBoxKisi.Text + "',Ucret='" + TxtUcret.Text + "',Cinsiyet='" + CmbBoxCinsiyet.Text + "'where Kisiid=(" + id + "')", baglanti);
+            SqlCommand komut = new SqlCommand("update KisiEkle set Adi='" + TxtAdi.Text + "',Soyadi='" + TxtSoyadi.Text + "',Telefon='" + MskTxtTelefon + "',TC='" + MskTxtTCKimlikNo.Text + "',Mail='" + TxtMail.Text + "',OdaNo='" + TxtOdaNo.Text + "',GirisTarihi='" + DtpGirisTarihi.Value.ToString("yyyy-MM-dd") + "',CikisTarihi='" + DtpCikisTarihi.Value.ToString("yyyy-MM-dd") + "',Kisi='" + CmbBoxKisi.Text + "',Ucret='" + TxtUcret.Text + "',Cinsiyet='" + CmbBoxCinsiyet.Text + "'where Kisiid=" + id + "'"+"'" ,baglanti);
+            komut.ExecuteNonQuery();
             baglanti.Close();
             verilerigoster();
         }
