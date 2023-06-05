@@ -43,6 +43,9 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnHavaDurumu = new System.Windows.Forms.Button();
             this.BtnGazeteler = new System.Windows.Forms.Button();
             this.BtnCikis = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnAdminGiris
@@ -115,6 +118,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnRadyo.TabIndex = 5;
             this.BtnRadyo.Text = "Radyo Dinle";
             this.BtnRadyo.UseVisualStyleBackColor = false;
+            this.BtnRadyo.Click += new System.EventHandler(this.BtnRadyo_Click);
             // 
             // label1
             // 
@@ -165,6 +169,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnGazeteler.TabIndex = 9;
             this.BtnGazeteler.Text = "Gazeteler";
             this.BtnGazeteler.UseVisualStyleBackColor = false;
+            this.BtnGazeteler.Click += new System.EventHandler(this.BtnGazeteler_Click);
             // 
             // BtnCikis
             // 
@@ -176,6 +181,29 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BtnCikis.TabIndex = 10;
             this.BtnCikis.Text = "Çıkış";
             this.BtnCikis.UseVisualStyleBackColor = false;
+            this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(537, 199);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(167, 136);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label3.Location = new System.Drawing.Point(494, 164);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(233, 16);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "ÖĞRETMEN EVİ OTOMASYONU";
             // 
             // FrmAnaForm
             // 
@@ -185,7 +213,9 @@ namespace Ogretmen_Evi_Otomasyonu
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(716, 452);
+            this.ClientSize = new System.Drawing.Size(739, 452);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnCikis);
             this.Controls.Add(this.BtnGazeteler);
             this.Controls.Add(this.BtnHavaDurumu);
@@ -204,6 +234,7 @@ namespace Ogretmen_Evi_Otomasyonu
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ana Sayfa";
             this.Load += new System.EventHandler(this.FrmAnaForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +254,7 @@ namespace Ogretmen_Evi_Otomasyonu
         private System.Windows.Forms.Button BtnHavaDurumu;
         private System.Windows.Forms.Button BtnGazeteler;
         private System.Windows.Forms.Button BtnCikis;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

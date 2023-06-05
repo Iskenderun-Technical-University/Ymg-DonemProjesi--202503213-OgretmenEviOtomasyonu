@@ -57,5 +57,22 @@ namespace Ogretmen_Evi_Otomasyonu
             label1.Text = DateTime.Now.ToLongDateString();
             label2.Text = DateTime.Now.ToLongTimeString();
         }
+
+        private void BtnCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BtnRadyo_Click(object sender, EventArgs e)
+        {
+            FrmRadyoDinle fr = new FrmRadyoDinle();
+            fr.Show();
+        }
+
+        private void BtnGazeteler_Click(object sender, EventArgs e)
+        {
+            FrmGazeteler fr = new FrmGazeteler();
+            fr.Show();
+        }
     }
 }
